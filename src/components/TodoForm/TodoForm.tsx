@@ -1,5 +1,5 @@
 import React, {useRef} from "react";
-
+import './todo-form.styles.scss'
 interface TodoFormProps {
     addTodo: (arg: string) => void
 }
@@ -14,9 +14,8 @@ const TodoForm: React.FC<TodoFormProps> = ({addTodo}: TodoFormProps): JSX.Elemen
         }
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} className='todo-form'>
             <input ref={todoInput} type='text'/>
-            <button>Add</button>
         </form>
     )
 }

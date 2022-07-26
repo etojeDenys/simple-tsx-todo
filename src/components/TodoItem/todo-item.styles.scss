@@ -1,0 +1,9 @@
+.todo-item{
+  padding: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  &:hover{
+    text-decoration: line-through;
+    font-size: 25px;
+  }
+}
